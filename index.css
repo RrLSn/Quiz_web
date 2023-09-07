@@ -26,7 +26,53 @@ body{
     color: var(--primaryColor);
 }
 
-.btn{
+#container h1{
+    font-size: 4rem;
+}
+
+.ready{
+    width: 40vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ready p{
+    font-size: 1.5rem;
+}
+
+.ready button{
+
+}
+
+form{
+    margin: 1rem 0;
+}
+
+form p{
+    font-weight: bold;
+}
+
+form input{
+    width: 15vw;
+    height: 5vh;
+    padding: 0.5rem 0.8rem;
+    color: var(--primaryColor);
+    font-size: 1rem;
+    font-weight: 700;
+    outline: none;
+    margin: 0.2rem 0 0;
+    border: 1px solid var(--primaryColor);
+}
+
+form input::placeholder{
+    color: #c2c2c2;
+    font-style: italic;
+}
+
+.btn, .ready button{
     text-decoration: none;
     color: var(--primaryColor);
     width: 7rem;
@@ -39,9 +85,14 @@ body{
     margin: 10px 0;
     border-radius: 4px;
     font-weight: bold;
+    cursor: pointer;
 } 
 
-.btn:hover{
+.btn:hover, .ready button:hover{
     background-color: var(--primaryColor);
     color: var(--white);
+}
+
+.btn, form{
+    display: none;
 }
