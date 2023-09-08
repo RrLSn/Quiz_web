@@ -3,11 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="selectionPage.css">
+    <link rel="stylesheet" href="style.css">
     <title>Quick Quiz</title>
 </head>
 <body>
-    <div class="SelContainer"></div>
-    <script src="/index.js"></script>
+    <div id="selContainer">
+        <h1>Welcome Player!</h1>
+        <div class="fieldSection">
+            <h5>Select Category for your question:</h5>
+            <select name="" id="select">
+                <option value="null" class="options category">--Select Category--</option>
+            </select>
+        </div>
+        <div class="difficulty">
+            <h5>Select difficulty:</h5>
+            <select name="" id="select">
+                <option value="null" class="options diff">--Select Difficulty--</option>
+            </select>
+        </div>
+        <a href="/questionPage.html" class="btn">Next</a>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

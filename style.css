@@ -30,7 +30,7 @@ body{
     font-size: 4rem;
 }
 
-.ready{
+/* .ready{
     width: 40vw;
     height: 10vh;
     display: flex;
@@ -41,7 +41,7 @@ body{
 
 .ready p{
     font-size: 1.5rem;
-}
+} */
 
 form{
     margin: 1rem 0;
@@ -68,12 +68,14 @@ form input::placeholder{
     font-style: italic;
 }
 
-.btn, .ready button{
+.btn
+/* .pageButton */
+{
     text-decoration: none;
     color: var(--primaryColor);
     width: 7rem;
     height: 2rem;
-    background-color: #fff;
+    /* background-color: #fff; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,11 +86,50 @@ form input::placeholder{
     cursor: pointer;
 } 
 
-.btn:hover, .ready button:hover{
+.btn:hover 
+/* .pageButton:hover */
+{
     background-color: var(--primaryColor);
     color: var(--white);
 }
-
+/* 
 .btn, form{
     display: none;
+} */
+
+#selContainer{
+    width: 100%;
+    height: 100%;
+    padding: 10rem 3rem;
+    color: var(--primaryColor);
+}
+
+.fieldSection,
+.difficulty{
+    margin: 4rem 0 0;
+    color: black;
+}
+
+#select{
+    width: 20vw;
+    height: 5vh;
+    padding: 0.5rem;
+    outline: none;
+}
+
+.questionContainer{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.question{
+    width: 30vw;
+    height: 20vh;
+    background-color: var(--white);
+    color: var(--primaryColor);
+    padding: 3rem 0 0;
+    border-radius: 10px;
+    text-align: center;
 }
