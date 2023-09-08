@@ -10,3 +10,8 @@ body{
     height: 100vh;
     background-color: #cbd8eb;
 }
+
+#SelContainer{
+    width: 100vw;
+    height: 100vh;
+}
