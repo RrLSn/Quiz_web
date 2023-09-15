@@ -45,6 +45,7 @@ body{
 
 form{
     margin: 1rem 0;
+    display: none;
 }
 
 form p{

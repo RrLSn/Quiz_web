@@ -1,16 +1,23 @@
-// //selector
-// const navigateEl = document.getElementsByClassName('btn')
-// const inputNameEl = document.getElementsByClassName('HomeInput')
+//selector
+const inputNameEl = document.getElementById("HomeInput")
+const welcomeNote = document.querySelector("welcome-note")
+const formEl = document.getElementById("form")
+const introEl = document.getElementById("ready")
+const readyButton = document.querySelector(".ready-btn")
+const navigatorEl = document.getElementById("gamePage-navigator")
 
+console.log("Hello World!")
 
-// navigateEl.addEventListener(
-//     'click',
-//     (e)=>{
-//         e.preventDefault()
-//         if(inputNameEl.value === ''){
-//             alert("Input Player Name to proceed")
-//         }else{
-//             window.location.href='/selectionPage.html'
-//         }
-//     }
-// )
+readyButton.addEventListener(
+    "click",
+    ()=>{
+        formEl.style.display = "block"
+        introEl.style.display = "none"
+    }
+)
+
+const navigate = () => {
+
+}
+
+navigatorEl.addEventListener("click", navigate)
